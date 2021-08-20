@@ -1,0 +1,40 @@
+@import "../styles/reusables/button.scss";
+@import "../styles/reusables/fonts.scss";
+
+.main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 20px 0px 20px;
+  .name {
+    flex: 0.5;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-family: $bebas-neue;
+  }
+  .buttonContainer {
+    text-align: right;
+    flex: 0.5;
+    align-self: flex-end;
+    button {
+      @include buttonStyles;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    .name {
+      font-size: 3rem;
+    }
+    .buttonContainer {
+      button {
+        width: 170px;
+        height: 50px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "../reusables/colors.scss";
+
+@mixin buttonStyles {
+  border: none;
+  border-radius: 6px;
+  width: 100px;
+  height: 35px;
+  font-weight: bold;
+  color: white;
+  background-color: $dark-green;
+  cursor: pointer;
+}
